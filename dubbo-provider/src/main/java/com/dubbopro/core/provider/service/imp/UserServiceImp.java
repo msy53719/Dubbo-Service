@@ -6,7 +6,7 @@ import com.dubbopro.core.service.UserService;
 public class UserServiceImp implements UserService{
 
 	public UserDto registerUser(UserDto user) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 

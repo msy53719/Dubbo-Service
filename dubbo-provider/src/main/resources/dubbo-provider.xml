@@ -7,7 +7,7 @@
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
 	<!-- 提供方应用信息，用于计算依赖关系 -->
-	<dubbo:application name="Dubbo-MockServer" />
+	<dubbo:application name="dubbo-server" />
 	<!-- 使用zookeeper注册中心暴露服务地址 -->
 	<!-- <dubbo:registry address="zookeeper://127.0.0.1:2181" /> -->
 
@@ -19,10 +19,10 @@
 	<dubbo:protocol name="dubbo" port="20880" server="jetty" />
 	<!-- <dubbo:protocol name=" rest " port="20880" /> -->
 	<!-- 声明需要暴露的服务接口 -->
-	<dubbo:service interface="com.mosy.service.UserService"
+	<dubbo:service interface="com.dubbopro.core.service.UserService"
 		ref="userServiceImp" />
 	<!-- 和本地bean一样实现服务 -->
-	<bean id="userServiceImp" class="com.mosy.serviceImpl.UserServiceImp" />
+	<bean id="userServiceImp" class="com.dubbopro.core.provider.service.imp.UserServiceImp" />
 
 	<dubbo:service interface="com.mosy.service.UserServicelogin"
 		ref="userServiceLogginImpl" />

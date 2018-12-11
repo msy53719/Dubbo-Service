@@ -3,6 +3,8 @@ package com.dubbopro.core.api.dto;
 import java.io.Serializable;
 
 public class UserDto implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 
 	private String name;
 	private String sex;
@@ -32,7 +34,5 @@ public class UserDto implements Serializable {
 	public void setAge(String age) {
 		this.age = age;
 	}
-
-	private static final long serialVersionUID = 1L;
 
 }
